@@ -1,0 +1,23 @@
+ID
+login - Div do formulário de Login
+senha - pra confirmar senha
+confirme-senha 
+btn-entrar - botão para entrar
+lupa - é a lupa
+search - caixa de pesquisa
+noticias - div com as noticias
+recente - noticias recentes
+linha - é a linha
+caixa - são as noticias individualmente
+gamer - topico dos games
+anime - topico dos animes
+
+Class
+navbar - Header
+btn-navbar - Botão do Header
+container - main
+forms - input de formulario
+classe - topicos
+flex
+
+Variavel

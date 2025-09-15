@@ -1,0 +1,133 @@
+/* Cores */
+:root{
+    --background: rgb(109, 0, 109);
+    --background2: rgb(75, 0, 75);
+    --itenBackground: rgb(80, 0, 80);
+    --itenBackground2: rgb(58, 0, 58);
+}
+
+/* Fontes */
+@font-face {
+    font-family: "Anonymous Pro";
+    src: local(Anonymous Pro), url(C:\Users\John\Desktop\YARNEY\Fontes\Anonymous_Pro\AnonymousPro-Regular.ttf);
+}
+
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Principal */
+main{ 
+    text-align: center;
+    background-size: cover;
+   
+    height: 100%;  
+    padding-top: 100px;
+    padding-bottom: 40vh;
+    
+}
+
+
+/* Titulo */
+h1 {
+    text-align: center;
+    font-size: 56px;
+    margin-top: 4vh;
+    margin-bottom: 35px;
+}
+
+
+
+.classe {
+    box-sizing: border-box;
+    margin-top: 40px;
+    width: 98.7vw;
+    padding-left: 2%;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--texto);
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid var(--texto);
+}
+
+
+#caixa {
+    height:  200px;
+    width: 200px;
+    background-color: var(--itenBackground);
+    padding: 15px;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    border-radius: 5%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a {
+    text-decoration: none; 
+}
+
+#caixa:hover {
+    background-color: var(--itenBackground2);
+    transition: 0.3s;
+    transform: translateY(-2vh);
+    position: relative; /* ou absolute/fixed */
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#caixa p {
+    color: rgb(223, 223, 223);
+    font-size: 20px;
+}
+
+#caixa img {
+    height: 75px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+/*botão ver mais*/
+.btn-VerMais{
+    border-radius: 40px;
+    border: none;
+    background-color: var(--background);
+    width: 5vw;
+    height: 3vh;
+    margin-top: -1vh;
+}
+.btn-VerMais:hover{
+    background-color: var(--background2);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 700px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    #caixa {
+        width: 90vw;
+        height: 160px;
+        margin-left: 3vw;
+    }
+}
