@@ -1,0 +1,136 @@
+/*Cores*/
+:root{
+    --corSite: #ed9700;
+    --cor1:  #a000bf;
+    --cor2: #9c9c9c;
+    --corEscura: #2b2b2b;
+    --texto: #707070;
+    --back_Header:#000000;
+    
+}
+
+/*Fontes */
+@font-face {
+    font-family: "Anonymous Pro";
+    src: local(Anonymous Pro), url(C:\Users\John\Desktop\YARNEY\Fontes\Anonymous_Pro\AnonymousPro-Regular.ttf);
+}
+
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: var(--corSite);
+}
+
+/* Cor do texto */
+h1, p, a{
+    color: var(--texto);
+    font-weight: bolder;
+}
+
+/* Lista do Header */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0;
+    margin: 0;
+    background-color: black;
+    padding: 0;
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Link do Header */
+.selecao{
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    margin: 0 20px;
+    font-size: 16px;
+}
+/* Decoração do Link do Header */
+.selecao:hover {
+    background-color: var(--texto);
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 1s;
+    transition: color 0.3;
+}
+
+/* Tamanho da fonte do Subtitulo */
+h2 {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+
+/* Botão para criar a conta*/
+.btn-navbar {
+    text-decoration: none;
+    padding: 4px;
+    width: 10vw;
+    display: block;
+    margin: 0 5px;
+    font-size: 16px;
+    /*font-weight: bolder;*/
+    background-color: black;
+    color: var(--texto);
+    border: none;
+    margin-right: 45px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-navbar a{
+    text-decoration: none;
+}
+
+/* Efeito de botão para criar a conta */
+.search-container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;    /* Alinha os itens verticalmente */
+    width: 25vw;            /* Faz o contêiner ocupar a largura total */
+}
+
+#lupa {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid black;
+    border-right: none; /* Remove borda direita para unir ao campo de busca */
+    display: inline-block;
+    border-right: 1px solid black;
+}
+
+input[type="search"] {
+    width: 565px;
+    height: 37px;
+    background-color: white;
+    border: 1px solid black;
+    border-left: none; /* Remove borda esquerda para unir à lupa */
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none; /* Remove borda de foco padrão */
+}

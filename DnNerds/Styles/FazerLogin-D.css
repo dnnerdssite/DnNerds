@@ -1,0 +1,161 @@
+/* Cores */
+:root{
+    --corH1: #000000;
+    --corP: #000000;
+    --texto: #707070;
+    --back_Forms: #242424;
+    --back-Body: #400080;
+    --back-Btn: #000000;
+}
+
+/* Fontes */
+@font-face {
+    font-family: "Anonymous Pro";
+    src: local(Anonymous Pro), url(C:\Users\John\Desktop\YARNEY\Fontes\Anonymous_Pro\AnonymousPro-Regular.ttf);
+}
+
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo */
+body {
+    background-color: var(--back-Body);
+    background-size: cover;
+    /*Mudar as fonter!!*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cor dos texto */
+h1, p, a {
+    color: var(--texto);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 56px;
+    margin-top: 15vh;
+    color: var(--corH1);
+}
+
+/* Subtitulo */
+p {
+    text-align: center;
+    font-size: 19px;
+    margin-top: -1vh;
+    text-decoration: none;
+    color: var(--corP);
+}
+
+/* Botão para criar uma conta*/
+p a{
+    text-decoration: none;
+    color: var(--corP);
+}
+p a:hover{
+    text-decoration: underline;
+}
+
+/* Formulário */
+#login {
+    background-color: var(--back_Forms);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%;
+    margin-right: 30%;
+    margin-top: 35px;
+    border-radius: 15px;
+    width: 30vw;
+    height: 28vh;
+    font-size: 25px;
+    font-family: "Anonymous Pro", serif;
+    text-align: center;
+}
+
+/* Texto do Formulário */
+#login label {
+    color: var(--texto);
+    margin-left: 0%;
+    font-family: "Anonymous Pro", serif;
+}
+
+/* Inputs dos Formulário */
+#login input {
+    height: 3vh;
+    width: 15vw;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: "Anonymous Pro", serif;
+    margin-bottom: 20px;
+}
+
+/* Esqueci minha senha */
+#login a {
+    margin-top: 70px;
+    text-decoration: none;
+    text-align:  center;
+    font-size: 20px;
+}
+
+#login a:hover{
+    text-decoration: underline;
+}
+
+/* Botão de entrar */
+#btn-entrar {
+    background-color: var(--back-Btn);
+    color: #ffcc00;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 10vw;
+    height: 6vh;
+    margin-left: 45%;
+    margin-right: 44%;
+    margin-top: 35px;
+    font-family: "Anonymous Pro", serif;
+    text-decoration: none;
+}
+
+#btn-entrar a{
+    text-decoration: none;
+    font-size: 20px;
+}
+#btn-entrar a:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+/* Efeito do Botão de entrar */
+#btn-entrar:hover {
+    background-color: var(--texto);
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 1s;
+    transition: color 0.3;
+}
+
+@media (max-width: 700px) {
+    #login {
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 35px;
+        border-radius: 0px;
+        width: 100vw;
+        height: 240px;
+        font-size: 25px;
+        font-family: "Anonymous Pro", serif;
+        text-align: center;
+    }
+}
